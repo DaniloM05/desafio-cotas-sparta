@@ -51,6 +51,26 @@ python3 -m uvicorn main:app --reload
 Abra seu navegador e acesse a seguinte URL para testar a API:
 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
+* Na página, expanda a rota `POST /calcular`.
+* Clique no botão **"Try it out"**.
+* No campo "Request body", cole o seguinte JSON de exemplo:
+
+```json
+{
+  "taxa": 0.01,
+  "cotas": [
+    {
+      "valor": 100.0,
+      "quantidades": [10, 20, 30]
+    },
+    {
+      "valor": 101.0,
+      "quantidades": [10, 20, 35]
+    }
+  ]
+}
+```
+
 ## 🧠 Decisões Principais
 
 1.  **Escolha do FastAPI**: Optei pelo FastAPI por ser um framework web Python moderno e de alta performance. Sua integração nativa com Pydantic para validação de dados e a geração automática de documentação interativa (Swagger UI) agilizam o desenvolvimento e garantem uma API robusta e fácil de usar.
