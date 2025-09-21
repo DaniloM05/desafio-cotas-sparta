@@ -21,7 +21,7 @@ Siga os passos abaixo para executar o projeto em sua máquina.
 
 **1. Clone o repositório:**
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO>
+git clone https://github.com/DaniloM05/desafio-cotas-sparta.git
 cd desafio-cotas-sparta
 ```
 
